@@ -1,0 +1,180 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="collections des timbres">
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="stylesheet" href="/style/styleIndex.css" />
+    <link rel="icon" type="image/x-icon" href="assets/logo.ico">
+    <title>L'art de collectionner des Timbres</title>
+</head>
+<body>
+    <header id="header" class="header-class">
+        <div id="logo">
+            <img src="assets/logo.ico" alt="logo" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="acceuil">ACCUEIL</a></li>
+                <li><a href="presentationTimbre">TIMBRES</a></li>
+                <li><a href="contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="banniere_image" class="banniere-class">
+        <div id="banniere_texte">
+            L'art de collectionner des timbres.
+        </div>
+    </div>
+
+    <main>
+        <p>La collection de timbres est un loisir et aucune règle n’est imposée. 
+        Chacun collectionnera suivant ses goûts et ses envies.<br>
+        En règle générale, on classe les timbres neufs ensemble et l’on met les oblitérés à part. 
+        Pour les anciens timbres, on peut mélanger neufs et oblitérés ce n’est pas gênant.<br>
+        Il faut avant tout choisir une collection qui correspond à un budget précis. 
+        Certaines collections sont très onéreuses. On peut se faire plaisir en collectionnant 
+        avec un budget très modeste.</p>
+        <h1>Type de philatélie</h1>
+        <ul>
+            <li>La philatélie fiscale</li>
+            <p>Cette branche de la philatélie s’appelle également fiscophilie et est consacrée aux :
+                <ul id="fiscale">
+                    <li>Papiers timbrés : c’est sous cette forme que les premiers timbres fiscaux ont fait leur apparition.</li>
+                    <li>Timbres fiscaux mobiles : ces timbres sont apparus en 1840 après les timbres-poste.</li>
+                    <li>Timbres sociaux-postaux : ces timbres permettent de montrer qu’une contribution sociale a été payée par les salariés ou les employeurs.</li>
+                    <li>Oblitérations fiscales : elles permettent aux timbres de n’être utilisés qu’une fois.</li>
+                </ul>
+            </p>
+            <li>La philatélie thématique</li>
+            <p>Comme son nom l’indique, ce type de philatélie désigne l’action de collectionner les timbres par thème. Ces thématiques sont très variées : 
+            animaux, métiers, hommes ou femmes politiques, drapeaux, plantes, voitures, trains… 
+            Le collectionneur choisit le thème en fonction de ses goûts et de ses envies. Il peut aussi affiner une thématique :
+            par exemple, les félins, les plantes tropicales, etc. A l’origine, cette activité était appelée philatélie constructive.
+            </p>
+            <li>La philatélie mondialiste</li>
+            <p>Rechercher et collectionner tous les timbres du monde ? C’est le pari du philatéliste mondialiste ! 
+            Mais la tâche est immense, voire impossible : prix parfois élevés, beaucoup de temps à consacrer à la collection, 
+            certains timbres difficiles à trouver, manque de place pour stocker les timbres, etc. 
+            C’est pourquoi ces passionnés redéfinissent les limites de leur collection. 
+            Ils peuvent se concentrer sur une période historique précise ou sur une zone.
+            </p>
+            <li>L’aérophilatélie</li>
+            <p>Cette discipline consiste à collectionner les timbres liés au transport aérien. 
+            Le Cercle Aérophilatélique Français, association créée en 1957, est spécialisé sur l’histoire de la poste aérienne. 
+            Les thématiques liées à cette branche de la philatélie sont variées. D’après le site internet du CAF,
+            l’aérophilatélie regroupe l’étude des vols des pionniers de l’aviation, 
+            des hommes et femmes ayant joué un rôle décisif dans l’histoire de l’aviation ou encore des courriers aériens accidentés.
+            </p>
+        </ul>    
+    </main>
+
+    <footer id="footer" class="footer-class">
+        <a href=""><img src="assets/facebook.png" alt="facebook" /></a>
+        <a href=""><img src="assets/twitter.png" alt="twitter" /></a>
+        <p>© 2024 Anwar</p>
+    </footer>
+</body>
+<style>
+    body
+{
+    background: url("assets/fond.jpg");
+    color: #181818;
+    width: 900px;
+    margin: auto;
+}
+header
+{
+    background: url("assets/separateur.png") repeat-x bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#logo>img
+{
+    width: 80px;
+    height: 80px;
+}
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+nav li
+{
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+#banniere_image
+{
+    margin-top: 15px;
+    height: 200px;
+    border-radius: 5px;
+    background: url("assets/collectionTimbres.jpg") no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}
+#banniere_texte
+{
+
+    border-radius: 0px 0px 5px 5px;
+    height: 33px;
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 4px;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    font-size: 0.9em;
+    position: absolute;
+    bottom: 0;
+    text-transform: uppercase;
+}
+footer{
+    margin-top: 10px;
+    background:  url("assets/separateur.png") repeat-x top;
+    padding-top: 25px;
+    text-align: right;
+}
+footer>p{
+    text-align: right;
+    font-weight: bold;
+}
+p{
+    text-align: justify;
+    font-size: 1.25em;
+}
+
+h1{
+    color:#760001;
+}
+
+li{
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+#fiscale>li{
+    font-weight: normal;
+}
+</style>
+</html>
+</Layout>

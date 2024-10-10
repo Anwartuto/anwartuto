@@ -1,0 +1,168 @@
+---
+const year = new Date().getFullYear();
+---
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="presentationTimbre.scss">
+    <link rel="icon" type="image/x-icon" href="assets/logo.ico">
+    <title>Collection Timbres</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="assets/logo.png" alt="logo" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="acceuil">ACCUEIL</a></li>
+                <li><a href="presentationTimbre">TIMBRES</a></li>
+                <li><a href="contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="banniere_image">
+        <div id="banniere_texte">
+            l'art de collectionner des timbres.
+        </div>
+    </div>
+
+    <main>
+        <div id="contenant">
+            <h1>Timbres Fiscaux</h1>
+            <img src="assets/timbre_fiscal.jpg" alt="timbre fiscal">
+            <img src="assets/timbre_fiscal2.jpg" alt="timbre fiscal">
+            <img src="assets/timbre_fiscal3.jpg" alt="timbre fiscal">
+            <img src="assets/timbre_fiscal4.jpg" alt="timbre fiscal">
+            <img src="assets/timbre_fiscal5.jpg" alt="timbre fiscal">
+            
+            <h1>Timbres selon thème</h1>
+            <img src="assets/timbre_animal.jpg" alt="timbre animal">
+            <img src="assets/timbre_voiture.jpg" alt="timbre voiture">
+            <img src="assets/timbre_plante.jpg" alt="timbre plante">
+            <img src="assets/timbre_metier.jpg" alt="timbre metier">
+            <img src="assets/timbre_drapeau.jpg" alt="timbre drapeau">
+            
+            <h1>Timbres mondialistes</h1>
+            <img src="assets/timbre_US.jpg" alt="timbre US" class="pays">
+            <img src="assets/timbre_maroc.jpg" alt="timbre Maroc" class="pays">
+            <img src="assets/timbre_russie.jpg" alt="timbre Russie" class="pays">
+            <img src="assets/timbre_chine.jpg" alt="timbre Chine" class="pays">
+            <img src="assets/timbre_turquie.jpg" alt="timbre Turquie" class="pays">
+            <img src="assets/timbre_CoteIvoire.jpg" alt="timbre Côte d'Ivoire" class="pays">
+            
+            <h1>Timbres Poste aérienne</h1>
+            <img src="assets/timbre_aerien.PNG" alt="timbre poste aérienne">
+            <img src="assets/timbre_aerien2.PNG" alt="timbre poste aérienne">
+            <img src="assets/timbre_aerien3.PNG" alt="timbre poste aérienne">
+            <img src="assets/timbre_aerien4.PNG" alt="timbre poste aérienne">
+            <img src="assets/timbre_aerien5.PNG" alt="timbre poste aérienne">
+            <br><br>
+            <h1>Video</h1>
+            <center>
+                <video controls width="100%" height="100%" src="assets/videotimbre.mp4"></video>
+            </center>
+        </div>
+    </main>
+
+    <footer>
+        <a href=""><img src="assets/facebook.png" alt="facebook"></a>
+        <a href=""><img src="assets/twitter.png" alt="twitter"></a>
+        <p>© {year} Anwar</p>
+    </footer>
+</body>
+<style>body
+    {
+        background: url("assets/fond.jpg");
+        color: #181818;
+        width: 900px;
+        margin: auto;
+    }
+    header
+    {
+        background: url("assets/separateur.png") repeat-x bottom;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    #logo>img
+    {
+        width: 80px;
+        height: 80px;
+    }
+    nav ul
+    {
+        list-style-type: none;
+        display: flex;
+    }
+    nav li
+    {
+        margin-right: 15px;
+        font-weight: bold;
+        font-size: 1.25em;
+    }
+    nav a
+    {
+        font-size: 1.3em;
+        color: #181818;
+        padding-bottom: 3px;
+        text-decoration: none;
+    }
+    nav a:hover
+    {
+        color: #760001;
+        border-bottom: 3px solid #760001;
+    }
+    #banniere_image
+    {
+        margin-top: 15px;
+        height: 200px;
+        border-radius: 5px;
+        background: url("assets/collectionTimbres.jpg") no-repeat;
+        position: relative;
+        box-shadow: 0px 4px 4px #1c1a19;
+        margin-bottom: 25px;
+    }
+    #banniere_texte
+    {
+    
+        border-radius: 0px 0px 5px 5px;
+        height: 33px;
+        width: 100%;
+        padding-top: 15px;
+        padding-left: 4px;
+        background-color: black;
+        opacity: 0.8;
+        color: white;
+        font-size: 0.9em;
+        position: absolute;
+        bottom: 0;
+        text-transform: uppercase;
+    }
+    footer{
+        margin-top: 10px;
+        background:  url("assets/separateur.png") repeat-x top;
+        padding-top: 25px;
+        text-align: right;
+    }
+    footer>p{
+        text-align: right;
+        font-weight: bold;
+    }
+    #contenant{
+        width: 100%;
+        height: auto;
+    }
+    div>img{
+        height: 100px;
+        width: 170px;
+        margin-right: 5px;
+    }
+    .pays{
+        height: 170px;
+        width: 130px;
+        margin-right: 16px;
+    }</style>
+</html>
